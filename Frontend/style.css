@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 400px;
+    height: 400px;
+}
+
+.square {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    border: 2px solid #000;
+}
+
+.blue-background {
+    background-color: #3498db;
+    transition: background-color 0.2s ease;
+}
+
+.red-background {
+    background-color: #FF6B6B;
+    transition: background-color 0.2s ease;
+}
+
+.message {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 999;
+    margin: 0;
+    font-size: 20px;
+}
+
+.restart-button-container {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    color: #333;
+    border-radius: 5px;
+    z-index: 999;
+    margin: 0;
+    font-size: 20px;
+    opacity: 0;
+}
+
+
+.restart-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.restart-button:hover {
+    background-color: #45a049;
+}
