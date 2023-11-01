@@ -1,6 +1,7 @@
 const { Server } = require('socket.io');
 const http = require('http');
 const express = require('express');
+const cors = require('cors');
 
 const PORT = process.env.PORT || 3000;
 const COLORS = ['BLUE', 'RED'];
