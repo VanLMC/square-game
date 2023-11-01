@@ -28,12 +28,10 @@
 
 .blue-background {
     background-color: #3498db;
-    transition: background-color 0.2s ease;
 }
 
 .red-background {
     background-color: #FF6B6B;
-    transition: background-color 0.2s ease;
 }
 
 .message {
