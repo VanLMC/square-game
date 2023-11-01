@@ -9,7 +9,11 @@ const TOTAL_SQUARES = 16;
 
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server,  { cors: { origin: '*' } });
+const io = new Server(server, {
+  cors: {
+    origin: 'https://square-game-z40f.onrender.com/',
+  },
+});
 
 
 let players = [];
