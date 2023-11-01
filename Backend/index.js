@@ -119,13 +119,12 @@ io.on('connection', (socket) => {
   socket.on('disconnect', () => {
 
     const disconectedPlayer = players.find((player) => player.id === socket.id);
-    if(!!(disconectedPlayer && disconectedPlayer.color)){
+
       io.emit("message", "One of the players disconected, the match will be restarted");
       availableColors.unshift(disconectedPlayer.color);
       players = players.filter((player) => player.id !== socket.id);
       selectedSquares = [];
       io.emit("selectedSquare", selectedSquares);
-    }
 
   });
 
