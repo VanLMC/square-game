@@ -12,12 +12,12 @@ const app = express();
 const server = http.createServer(app);
 
 app.use(cors({
-  origin: 'https://square-game-z40f.onrender.com/',
+  origin: 'https://square-game-z40f.onrender.com',
 }));
 
 const io = new Server(server, {
   cors: {
-    origin: 'https://square-game-z40f.onrender.com/',
+    origin: 'https://square-game-z40f.onrender.com',
   },
 });
 
