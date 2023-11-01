@@ -1,6 +1,6 @@
 import { showRestartButton, showMessage, updateSquares} from './functions.js';
 
-const socket = io('https://square-game-server.onrender.com:10000');
+const socket = io('https://square-game-server.onrender.com');
 
 let playingAs = undefined;
 
